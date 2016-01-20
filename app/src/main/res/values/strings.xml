@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AIR INDIA</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="guest_login"><u>Enter as a guest</u></string>
+    <string name="err_msg_first_name">First name cannot be empty</string>
+    <string name="err_msg_last_name">Last name cannot be empty</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_password">Enter the password</string>
+    <string name="option_male">Male</string>
+    <string name="option_female">Female</string>
+    <string name="option_one_way">One Way</string>
+    <string name="option_round_trip">Round Trip</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_flight">Search Flight</string>
+
+    <!-- Navigation Drawer Strings -->
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_friends">Friends</string>
+    <string name="nav_item_notifications">Messages</string>
+
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+    </string-array>
+
+    <string name="title_messages">Messages</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_home">Home</string>
+    <string name="title_activity_flight_booking">FlightBookingActivity</string>
+    <string name="title_activity_flight_list">FlightListActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+</resources>
