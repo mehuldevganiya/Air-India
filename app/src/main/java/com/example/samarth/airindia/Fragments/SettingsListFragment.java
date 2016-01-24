@@ -143,8 +143,14 @@ public class SettingsListFragment extends Fragment {
 
         options = new ArrayList<SettingListItem>();
         options.add(new SettingListItem("Login/Logout", R.drawable.ic_profile));
-        options.add(new SettingListItem("About us", R.drawable.ic_add));
-        options.add(new SettingListItem("Contact us",R.drawable.ic_add ));
+        options.add(new SettingListItem("RTI",R.drawable.ic_add ));
+        options.add(new SettingListItem("Careers",R.drawable.ic_add ));
+        options.add(new SettingListItem("Corporate",R.drawable.ic_add ));
+        options.add(new SettingListItem("Feedback",R.drawable.ic_add ));
+
+
+
+
         //options.add(new SettingListItem("Edit contact details",R.drawable.ic_add ));
 
         optionsAdapter = new OptionsAdapter();
@@ -163,11 +169,19 @@ public class SettingsListFragment extends Fragment {
                         //fragmentManager.beginTransaction().replace(R.id.frame_settings, fragment).commit();
                         break;
                     case 1:
-                        fragment = (Fragment) new AboutUsFragment();
+                        fragment =  new RtiFragment();
                         fragmentManager.beginTransaction().replace(R.id.frame_settings, fragment).commit();
                         break;
                     case 2:
-                        fragment = new AboutUsFragment();
+                        fragment = new CareersFragment();
+                        fragmentManager.beginTransaction().replace(R.id.frame_settings,fragment).commit();
+                        break;
+                    case 3:
+                        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.airindia.in/Images/pdf/Corporate_Environment_Policy.pdf"));
+                        startActivity(browserIntent);
+                        break;
+                    case 4:
+                        fragment = new FeedbackFragment();
                         fragmentManager.beginTransaction().replace(R.id.frame_settings,fragment).commit();
                 }
             }

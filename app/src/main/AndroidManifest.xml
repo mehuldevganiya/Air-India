@@ -32,10 +32,12 @@
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings" >
         </activity>
-
-        <activity android:name=".RecyclerViewActivity"></activity>
-
-        <activity android:name=".CardViewActivity"></activity>
+        <activity android:name=".RecyclerViewActivity" />
+        <activity android:name=".CardViewActivity" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:label="@string/title_activity_about_us" >
+        </activity>
     </application>
 
 </manifest>

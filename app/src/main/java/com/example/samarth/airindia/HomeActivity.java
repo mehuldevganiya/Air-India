@@ -139,13 +139,18 @@ public class HomeActivity extends AppCompatActivity implements DrawerFragment.Fr
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-      switch(id)
+        Intent intent;
+        switch(id)
       {
          case  R.id.action_settings:
-             Intent intent = new Intent(this,SettingsActivity.class);
+             intent = new Intent(this,SettingsActivity.class);
              startActivity(intent);
           break;
+          case R.id.action_about_us:
+              intent = new Intent(this,AboutUsActivity.class);
+              startActivity(intent);
       }
+
         return super.onOptionsItemSelected(item);
     }
 
